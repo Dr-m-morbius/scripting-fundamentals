@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class QuizOneCodingChallengec : MonoBehaviour
 {
-    public int score = 0;
+    public int Score = 0;
     public string PlayerName = "Morghan";
-    public int health = 100;
+    public int Health = 100;
     // Start is called before the first frame update
     void Start()
     {
-        
+        IncreseScore();
+        PrintPlayerName();
+        Decresehealth();
     }
 
     // Update is called once per frame
@@ -18,16 +20,17 @@ public class QuizOneCodingChallengec : MonoBehaviour
     {
         
     }
-    public void increseScore()
+    private void IncreseScore()
     {
-        score = score + 10;
+        Score = Score + 10;
+   
     }
-    public void PrintPlayerName()
+    private void PrintPlayerName()
     {
-       Debug.Log("Morghan");
+       Debug.Log("PlayerName");
     }
-    public void Decresehealth()
+    private void Decresehealth()
     {
-        health = health - 20;
+        Health = Health - 20;
     }
 }
